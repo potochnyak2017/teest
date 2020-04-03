@@ -6,25 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  lesens = ['Програмування мобільних додатків ', 'Схемотехніка', 'OC'];
- balls1:number; balls2:number; balls3:number;
-coff1:number; coff2:number; coff3:number;
+  lesens = ['Розробка мобільних додатків ', 'ООП Java', 'Програмно-апаратне забезпечення вбудованих систем'];
+ scores1:number; scores2:number; scores3:number;
+modulus1:number; modulus2:number; modulus3:number;
 result;
 evalRating() {
-this.result=(this.balls1*this.coff1)+(this.balls2*this.coff2)+(this.balls3*this.coff3);
+this.result=(this.scores1*this.modulus1)+(this.scores2*this.modulus2)+(this.scores3*this.modulus3);
 return this.result;
 }
 
 
 startClick1():void{
-   this.balls1=0;
-   this.coff1=0;
+   this.scores1=0;
+   this.modulus1=0;
   };startClick2():void{
-   this.balls2=0;
-   this.coff2=0;
+   this.scores2=0;
+   this.modulus2=0;
   };startClick3():void{
-   this.balls3=0;
-   this.coff3=0;
+   this.scores3=0;
+   this.modulus3=0;
   };
    
 }
