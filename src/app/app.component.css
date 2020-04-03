@@ -1,0 +1,24 @@
+p {
+  font-family: Lato;
+
+}
+#welcom{
+  text-align: center;
+ 
+}
+#main_conteiner{
+  margin-left: 5% ;
+  margin-right: 5% ;
+  border: 1px red solid;
+  padding: 5%;
+}
+#red{
+background: red;
+margin-right: 93%
+}
+#green{
+background: green;
+margin-right: 90%
+}
+
+

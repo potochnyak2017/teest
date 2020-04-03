@@ -1,0 +1,74 @@
+<h2 id="welcom">Калькулятор рейтингу </h2>
+
+<div id="main_conteiner">
+     
+      <p> Назва дисципліни: 
+      <select>
+     <option *ngFor='let lesen of lesens'>  {{lesen}} </option>
+      </select>
+      </p>
+       <p> Кількість балів: 
+      <input [(ngModel)]="balls1" (ngModelChange)="balls1 = $event"/>
+      </p>
+      <p> Коефіціент: 
+     <input [(ngModel)]='coff1' (ngModelChange)="coff1 = $event"/>
+     </p>
+      <br>
+      <br>
+      <button (click)="startClick1()">
+        Очистити
+      </button>
+      <br>
+      <hr>
+        <p> Назва дисципліни: 
+      <select>
+     <option *ngFor='let lesen of lesens'>  {{lesen}} </option>
+      </select>
+      </p>
+       <p> Кількість балів: 
+      <input [(ngModel)]="balls2" (ngModelChange)="balls2 = $event"/>
+      </p>
+      <p> Коефіціент: 
+      <input [(ngModel)]="coff2" (ngModelChange)="coff2 = $event"/>
+      </p>
+      <br>
+      <br>
+      <button (click)="startClick2()">
+        Очистити
+      </button>
+       <br>
+       <hr>    
+        <p> Назва дисципліни: 
+      <select>
+     <option *ngFor='let lesen of lesens'>  {{lesen}} </option>
+      </select>
+      </p>
+       <p> Кількість балів: 
+      <input [(ngModel)]="balls3" (ngModelChange)="balls3 = $event" />
+      </p>
+      <p> Коефіціент: 
+      <input [(ngModel)]="coff3" (ngModelChange)="coff3 = $event"/>
+      </p>
+      <br>
+      
+      <button (click)="startClick3()">
+        Очистити
+      </button>
+      <br>
+       <hr> 
+       
+       <p> Рейтинг: {{evalRating()}} Балів</p>
+      
+       <br>
+       <br>
+       Наявність степендії:
+        <p *ngIf="result < 55" id="red"> Ні</p>
+        <p *ngIf="result > 55" id="green"> Так</p>
+        
+<br>
+</div>
+
+
+
+
+
